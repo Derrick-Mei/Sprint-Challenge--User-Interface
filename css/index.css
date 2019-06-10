@@ -220,3 +220,64 @@ header a:hover {
 }
 
 
+/* ============ About Section ============== */
+
+.top-content-about {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.middle-section-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px dashed black;
+    padding: 0px 2%;
+    margin-top: 23px;
+}
+
+/*
+You can see that the whitespace on the top and bottom of the middle-section-block is half the size as the middle space.
+I interpreted that as there's a top-bottom margin
+*/
+.middle-section-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+    border-bottom: 1px dashed black;
+    margin: 25px 0;
+}
+
+.middle-section-block img,
+.middle-section-block h1,
+.middle-section-block p,
+button {
+    margin: 8px 0;
+}
+
+button {
+    height: 40px;
+    width: 125px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+.bottom-content-about {
+    padding: 28px 0;
+}
+
+.logo:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
