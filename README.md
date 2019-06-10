@@ -33,14 +33,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+   1. semantic HTML are HTML elements that have meaning to them beyond presentational means.  It allows developers and the browser to make sense of the structure of the page. Semantic HTML also aides in SEO(Search Engine Optimization).
 
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+   1. block takes up the whole row while inline only takes up what is necessary
+   2. block has height and width.  Inline only has width to the length of its content.
 
 3. What are the 4 areas of the box model?
+   1. content, padding, border, margin
 
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
+   1. the cross axis from the flex-direction
 
 5. Explain why git is valuable to a team of developers.
+   1. git is important as a tool to help work on the same project as to not overwrite each other's code.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -52,13 +58,13 @@ You are expected to be able to answer all these questions. Your responses contri
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 
 ## Minimum Viable Product
@@ -85,6 +91,19 @@ You will also notice there are 10 boxes on the home page that need background co
 * [ ] box9: `indigo`
 * [ ] box10: `dodgerblue`
 
+There are many ways you could have solved this problem.  The issue was that there is an existing style for the background-color to be black.  Furthermore, that style is 3 nested classes increasing the specificity.  The real question was how would you handle the specificity.
+
+I have thought of several methods you could have used to solve the problem.
+
+1. Just remove the background-color: black.  Then since there is no existing style for background, any level specificity for background-color would work.
+2. Reduce the specificity of the .boxes nesting to just 1 or 2 levels
+3. Nest boxes with 3 classes to increase your CSS's specificity
+4. Combine classes with pseudo-classes to increase specificity
+
+5. Use ID's (#)
+6. Use ! important flag
+7. Use Inline Styling
+
 ### About Page
 
 [Review the provided design file for the about page](design-files/about.png). You have been provided the HTML wrapper, footer, and page content for the about page. Create the rest of the missing HTML and CSS to match the design file.
@@ -100,7 +119,7 @@ In your solution, it is essential that you follow best practices and produce cle
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Build a page of your choosing from the navigation items.  Come up with content and images that fit the theme.  
+* [ ] Build a page of your choosing from the navigation items.  Come up with content and images that fit the theme.
 * [ ] Introduce CSS animations to your site.
 * [ ] Build a contact page and create a form with several inputs of your choosing
 * [ ] Add responsive breakpoints to your code by using media queries
