@@ -91,7 +91,7 @@ You will also notice there are 10 boxes on the home page that need background co
 * [ ] box9: `indigo`
 * [ ] box10: `dodgerblue`
 
-There are many ways you could have solved this problem.  The issue was that there is an existing style for the background-color to be black.  Furthermore, that style is 3 nested classes increasing the specificity.  The real question was how would you handle the specificity.
+There are many ways you could have solved this problem.  The issue was that there is an existing style for the background-color to be black.  Furthermore, that style is 3 nested classes increasing the specificity.  Any targeting with classnames would have to have over 3 nested classes specificity to work, if you didn't want to modify the existing css. The real question was how would you handle the specificity.
 
 I have thought of several methods you could have used to solve the problem.
 
